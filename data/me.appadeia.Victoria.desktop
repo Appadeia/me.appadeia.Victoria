@@ -4,5 +4,5 @@ Name=Victoria
 Icon=me.appadeia.Victoria
 Exec=Victoria
 Comment=A place for your web apps.
-Categories=Internet
+Categories=Network;Chat;Email;IRCClient;VideoConference;InstantMessaging
 GenericName=Web App Browser
