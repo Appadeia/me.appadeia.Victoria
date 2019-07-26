@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
 
     QApplication app(argc, argv);
 
+    app.setDesktopFileName("me.appadeia.Victoria.desktop");
     app.setOrganizationName("Appadeia");
     app.setOrganizationDomain("me.appadeia");
     app.setApplicationName("Victoria");
