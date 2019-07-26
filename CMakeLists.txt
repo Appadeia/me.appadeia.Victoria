@@ -21,6 +21,7 @@ add_executable(${PROJECT_NAME} "main.cpp" "qml/qml.qrc" "fonts/fonts.qrc" ${vict
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Widgets Qt5::Quick Qt5::QuickControls2 Qt5::WebEngine)
 
+install(TARGETS Victoria DESTINATION bin)
 install(FILES ${victoria_qm_files} DESTINATION share/me.appadeia.Victoria/i18n)
 install(FILES data/me.appadeia.Victoria.svg DESTINATION share/icons/hicolor/scalable/apps)
 install(FILES data/me.appadeia.Victoria.desktop DESTINATION share/application)
