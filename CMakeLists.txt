@@ -24,4 +24,4 @@ target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Widgets Qt5::Quick 
 install(TARGETS Victoria DESTINATION bin)
 install(FILES ${victoria_qm_files} DESTINATION share/me.appadeia.Victoria/i18n)
 install(FILES data/me.appadeia.Victoria.svg DESTINATION share/icons/hicolor/scalable/apps)
-install(FILES data/me.appadeia.Victoria.desktop DESTINATION share/application)
+install(FILES data/me.appadeia.Victoria.desktop DESTINATION share/applications)
