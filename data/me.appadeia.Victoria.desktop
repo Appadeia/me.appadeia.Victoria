@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Victoria
+Icon=me.appadeia.Victoria
+Exec=Victoria
+Comment=A place for your web apps.
+Categories=Internet
+GenericName=Web App Browser

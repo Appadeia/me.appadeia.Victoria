@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Sidebar.qml</file>
+        <file>Homepage.qml</file>
+        <file>Service.qml</file>
+        <file>ServiceData.qml</file>
+        <file>AddDrawer.qml</file>
+    </qresource>
+</RCC>
