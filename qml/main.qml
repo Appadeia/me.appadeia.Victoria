@@ -5,6 +5,7 @@ import Qt.labs.settings 1.0
 import QtQuick.Layouts 1.13
 import QtWebEngine 1.9
 import QtQuick.Controls.Material 2.12
+import Qt.labs.platform 1.0 as Native
 
 ApplicationWindow {
     id: window
@@ -68,7 +69,7 @@ ApplicationWindow {
             onIndexChanged: {
                 stack.currentIndex = index
             }
-            onDeleted: {
+            onPopover: {
                 siteModel.remove(index)
             }
         }
@@ -109,6 +110,17 @@ ApplicationWindow {
                             if (stack.currentIndex === model["index"] + 1) {
                                 window.activeTitle = view.title
                             }
+                        }
+                    }
+                    Native.SystemTrayIcon {
+                        id: systray
+                        visible: view.icon != ""
+                        iconSource: view.icon
+                    }
+                    Connections {
+                        target: window
+                        onClosing: {
+                            systray.visible = false
                         }
                     }
                 }

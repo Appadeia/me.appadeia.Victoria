@@ -9,7 +9,7 @@ Rectangle {
     property alias model: sidebarView.model
     property var iconUrls
     signal indexChanged(int index)
-    signal deleted(int index)
+    signal popover(int index)
 
     width: 64
     color: Qt.rgba(255,255,255,0.05)
@@ -79,7 +79,7 @@ Rectangle {
                 anchors.fill: parent
                 onClicked: {
                     if (mouse.button == Qt.RightButton) {
-                        root.deleted(model["index"])
+                        root.popover(model["index"])
                     } else {
                         root.indexChanged(model["index"] + 1)
                     }
